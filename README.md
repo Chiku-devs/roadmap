@@ -4,7 +4,7 @@ What Chiku is exploring, planning and building, in the open. Tell us what matter
 
 ## See the roadmap
 
-The roadmap board lists every item and its stage:
+The [roadmap board](https://github.com/users/Chiku-devs/projects/1) lists every item and its stage:
 
 | Stage | Meaning |
 |---|---|
