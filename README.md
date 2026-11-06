@@ -1,6 +1,8 @@
-# Chiku roadmap
+# Stealth roadmap
 
-What Chiku is exploring, planning and building, in the open. Tell us what matters to you.
+What we are exploring, planning and building for Stealth, in the open. Tell us what matters to you.
+
+Stealth is a working name until the product has a brand.
 
 ## See the roadmap
 
@@ -26,10 +28,10 @@ Anyone can view the board. No account needed.
 
 Everything posted in this repository is public. Do not include personal details you would not want published.
 
-Before you send anything, please read the [feedback terms](FEEDBACK-TERMS.md). In short: feedback is voluntary, Chiku may use it freely, and you must not share confidential information that belongs to your employer or anyone else.
+Before you send anything, please read the [feedback terms](FEEDBACK-TERMS.md). In short: feedback is voluntary, we may use it freely, and you must not share confidential information that belongs to your employer or anyone else.
 
 ## How we use feedback
 
 We read every submission and review them weekly. Good ideas become roadmap items. We cannot reply to everything, and a suggestion appearing here is not a promise to build it.
 
-Chiku Pty Ltd, Melbourne, Australia.
+Stealth is built by Chiku Pty Ltd, Melbourne, Australia.

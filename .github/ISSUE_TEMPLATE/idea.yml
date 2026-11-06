@@ -1,11 +1,11 @@
 name: Suggest an idea
-description: Tell us about a problem you'd like Chiku to solve
+description: Tell us about a problem you'd like Stealth to solve
 labels: ["idea", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping shape Chiku. This issue will be **public**. Please read the [feedback terms](../blob/main/FEEDBACK-TERMS.md) first.
+        Thanks for helping shape Stealth. This issue will be **public**. Please read the [feedback terms](../blob/main/FEEDBACK-TERMS.md) first.
   - type: textarea
     id: problem
     attributes:
@@ -41,5 +41,5 @@ body:
       options:
         - label: I am not sharing confidential information that belongs to my employer, a former employer or anyone else.
           required: true
-        - label: I agree to the feedback terms, including that Chiku may use this feedback freely.
+        - label: I agree to the feedback terms, including that Chiku Pty Ltd may use this feedback freely.
           required: true

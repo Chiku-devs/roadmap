@@ -2,7 +2,9 @@
 
 Last updated: 06/11/2026
 
-These terms apply to anything you send Chiku Pty Ltd (ABN 46 676 213 040) through this repository, its issues and discussions, or our feedback forms ("feedback").
+Stealth is a working product name. If it changes, these terms continue to apply.
+
+These terms apply to anything you send Chiku Pty Ltd (ABN 46 676 213 040, "Chiku"), the company building Stealth, through this repository, its issues and discussions, or our feedback forms ("feedback").
 
 ## 1. Feedback is voluntary and unpaid
 
