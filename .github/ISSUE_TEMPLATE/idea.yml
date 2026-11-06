@@ -1,0 +1,45 @@
+name: Suggest an idea
+description: Tell us about a problem you'd like Chiku to solve
+labels: ["idea", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape Chiku. This issue will be **public**. Please read the [feedback terms](../blob/main/FEEDBACK-TERMS.md) first.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem do you run into?
+      description: Describe the situation in your own words. What happens today, and what makes it hard?
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you handle it now?
+      description: Paper, spreadsheets, an app, nothing at all?
+    validations:
+      required: false
+  - type: input
+    id: role
+    attributes:
+      label: Your role or trade (optional)
+      placeholder: e.g. electrician, site supervisor, small builder
+    validations:
+      required: false
+  - type: input
+    id: company
+    attributes:
+      label: Company you work for (optional, public)
+      description: Helps us understand context. Leave blank if you prefer.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before you submit
+      options:
+        - label: I am not sharing confidential information that belongs to my employer, a former employer or anyone else.
+          required: true
+        - label: I agree to the feedback terms, including that Chiku may use this feedback freely.
+          required: true

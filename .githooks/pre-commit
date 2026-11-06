@@ -1,0 +1,27 @@
+#!/bin/sh
+# Blocks a commit if gitleaks finds a secret (key, token, password) in the staged changes.
+# Enabled per clone with: git config core.hooksPath .githooks
+# To bypass for a confirmed false positive, add the finding to .gitleaksignore instead of skipping the hook.
+
+GITLEAKS="$(command -v gitleaks 2>/dev/null)"
+if [ -z "$GITLEAKS" ]; then
+  for p in "$LOCALAPPDATA/Microsoft/WinGet/Links/gitleaks.exe" \
+           "$LOCALAPPDATA"/Microsoft/WinGet/Packages/Gitleaks.Gitleaks_*/gitleaks.exe; do
+    [ -x "$p" ] && GITLEAKS="$p" && break
+  done
+fi
+
+if [ -z "$GITLEAKS" ]; then
+  echo "pre-commit: gitleaks not found, commit blocked." >&2
+  echo "Install it with: winget install --id Gitleaks.Gitleaks --exact" >&2
+  exit 1
+fi
+
+"$GITLEAKS" git --pre-commit --staged --redact --no-banner --verbose
+status=$?
+if [ $status -ne 0 ]; then
+  echo "" >&2
+  echo "pre-commit: possible secret in staged changes, commit blocked (see above)." >&2
+  echo "Remove it, or if it is a false positive, add its Fingerprint line to .gitleaksignore." >&2
+fi
+exit $status

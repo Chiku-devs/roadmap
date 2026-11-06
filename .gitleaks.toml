@@ -1,0 +1,9 @@
+# gitleaks config: all default rules, plus allowances for values that are public by design.
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "SSH key fingerprints (SHA256:...) are public identifiers, not secrets"
+regexTarget = "match"
+regexes = ['''SHA256:[A-Za-z0-9+/]{43}''']
